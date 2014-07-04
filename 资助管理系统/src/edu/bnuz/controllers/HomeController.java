@@ -1,10 +1,13 @@
 package edu.bnuz.controllers;
 
-import com.jfinal.core.Controller;
-
-public class HomeController extends Controller {
+public class HomeController extends CommonController {
 	public void index() {
+		System.out.print(getSession().getAttribute("loginuser"));
 		render("home.html");
+	}
+	
+	public void sample() {
+		
 	}
 
 }
