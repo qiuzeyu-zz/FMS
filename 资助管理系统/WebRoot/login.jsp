@@ -1,0 +1,90 @@
+﻿<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="gb2312">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+       
+
+    <title>Signin Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--switch-->
+   
+    <link href="css/highlight.css" rel="stylesheet">
+    <link href="css/bootstrap-switch.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+ 
+   
+    <div class="container">
+
+      <form class="form-signin" role="form" action="/login" method="post">
+        <h1 class="form-signin-heading">学生资助管理系统</h1>
+        <h3 class="form-signin-viceheading">信息技术学院</h3>
+
+        <div class="qborder2">
+        <input type="text" class="form-control" name="user" placeholder="学号" value="${username}" required autofocus>
+        <a href="#" class="qreset2" style="visibility: visable;"></a>
+        </div>
+        <div class="qborder2">
+        <input type="password" class="form-control" name="pwd" placeholder="身份证后5位" value="${userpwd}"required>
+        <a href="#" class="qreset2" style="visibility: visable;"></a>
+        
+        
+           <div class="header">
+        <p>
+           <input type="checkbox" name="student-check" checked data-size="large" data-on-text="学生" data-off-text="评议">
+        </p>
+           </div>  
+        
+
+        <label class="checkbox">
+        	${loginMsg}
+        </label>
+          
+        </div>
+        
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登陆</button>
+      </form>
+
+    </div> 
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/highlight.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

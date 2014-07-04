@@ -1,0 +1,4 @@
+jdbcUrl = jdbc:mysql://asd2875764.oicp.net/ziz?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+user = root
+password = asd2875764
+devMode = true
